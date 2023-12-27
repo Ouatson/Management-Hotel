@@ -1,0 +1,59 @@
+Utilisateurs
+    id
+    nom
+    prenom
+    poste
+    login
+    password
+    fk_id_manager
+
+Clients
+    id
+    nom
+    prenom
+    email
+    telephone
+    date_arrivee
+    date_sortie
+    mode_paiement
+
+Chambres
+    numero
+    type
+    taille_lit
+    occupied
+    #occupied_by (id_client)
+
+Reservations
+    id
+    nombre_nuits
+    date
+    date_prevue_arrivee
+    prix
+    fk_id_client
+    fk_id_chambre
+
+Commandes
+    id
+    type
+    #articles (list ... article | table article nom_art, prix)
+    montant
+    fk_id_client
+    fk_id_chambre
+
+Factures
+    id
+    prix_reservation
+    prix_commandes
+    montant_total
+    fk_id_client
+    fk_id_reservation
+    fk_id_commande
+
+Historique
+    id_date
+    fk_id_client
+    fk_id_chambre
+    fk_id_commande
+    fk_id_reservation
+    fk_id_facture
