@@ -5,6 +5,7 @@ Utilisateurs
     poste
     login
     password
+    fk_id_hotel
     fk_id_manager
 
 Clients
@@ -16,6 +17,7 @@ Clients
     date_arrivee
     date_sortie
     mode_paiement
+    fk_id_hotel
 
 Chambres
     numero
@@ -40,6 +42,7 @@ Commandes
     montant
     fk_id_client
     fk_id_chambre
+    fk_id_hotel
 
 Factures
     id
@@ -49,6 +52,7 @@ Factures
     fk_id_client
     fk_id_reservation
     fk_id_commande
+    fk_id_hotel
 
 Historique
     id_date
@@ -57,3 +61,13 @@ Historique
     fk_id_commande
     fk_id_reservation
     fk_id_facture
+    fk_id_hotel
+
+Hôtel
+    id
+    nom
+    adresse
+    telephone
+    nombre_chambres
+    list_utilisateurs
+    list_clients
