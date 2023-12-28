@@ -21,10 +21,16 @@ Clients
 
 Chambres
     numero
-    type
-    taille_lit
     occupied
     #occupied_by (id_client)
+
+    Chambre_luxe
+        type
+        taille_lit
+    
+    Chambre_normale
+        type
+        taille_lit
 
 Reservations
     id
@@ -38,7 +44,7 @@ Reservations
 Commandes
     id
     type
-    #articles (list ... article | table article nom_art, prix)
+    articles
     montant
     fk_id_client
     fk_id_chambre
