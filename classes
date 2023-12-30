@@ -24,6 +24,7 @@ Chambres
     occupied
     prix_par_nuit
     occupied_by
+    fk_id_hotel
 
     Chambre_luxe
         type
@@ -36,6 +37,7 @@ Chambres
 Reservations
     id
     nombre_nuits
+    list_chambres
     date
     date_prevue_arrivee
     date_prevue_départ
