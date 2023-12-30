@@ -22,7 +22,8 @@ Clients
 Chambres
     numero
     occupied
-    #occupied_by (id_client)
+    prix_par_nuit
+    occupied_by
 
     Chambre_luxe
         type
@@ -37,6 +38,7 @@ Reservations
     nombre_nuits
     date
     date_prevue_arrivee
+    date_prevue_départ
     prix
     fk_id_client
     fk_id_chambre
