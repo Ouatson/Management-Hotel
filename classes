@@ -58,7 +58,7 @@ Factures
     id
     prix_reservation
     prix_commandes
-    montant_total
+    montant_totalja
     fk_id_client
     fk_id_reservation
     fk_id_commande
