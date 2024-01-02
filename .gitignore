@@ -1,1 +1,2 @@
-// Je verrais ça après
+# Ignorer tous les fichiers d'extension .class
+*.class
