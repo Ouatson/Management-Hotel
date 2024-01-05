@@ -10,10 +10,10 @@ public class Clients {
     private String telephone;
     private Date date_arrivee;
     private Date date_sortie;
-    private String mode_paiement; // Enumeration
+    private TypePaiement mode_paiement; // Enumeration
 
 
-    public Clients(int id, String nom, String prenom, String email, String telephone, Date date_arrivee, Date date_sortie, String mode_paiement){
+    public Clients(int id, String nom, String prenom, String email, String telephone, Date date_arrivee, Date date_sortie, TypePaiement mode_paiement){
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -64,11 +64,11 @@ public class Clients {
         return date_sortie;
     }
 
-    public String getmode_paiement(){
+    public TypePaiement getmode_paiement(){
         return mode_paiement;
     }
 
-    public String setmode_paiement(){
+    public TypePaiement setmode_paiement(){
         return mode_paiement;
     }
 }
