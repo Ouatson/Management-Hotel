@@ -1,4 +1,4 @@
-package Class;
+package Services;
 
 public class ServiceCommande {
     

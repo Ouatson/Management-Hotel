@@ -1,8 +1,10 @@
-package Class;
+package Services;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+
+import Class.Utilisateurs;
 
 public class ServiceUtilisateur {
 
