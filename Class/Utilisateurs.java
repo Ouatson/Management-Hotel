@@ -5,7 +5,7 @@ public class Utilisateurs {
     private int id;
     private String nom;
     private String prenom;
-    private  TypePoste poste; // Enumeration
+    private TypePoste poste; // Enumeration
     private String login;
     private String password;
     private int id_hotel;
@@ -34,6 +34,14 @@ public class Utilisateurs {
 
     public String setnom(){
         return nom;
+    }
+
+    public String getprenom(){
+        return prenom;
+    }
+
+    public String setprenom(){
+        return prenom;
     }
 
     public TypePoste getposte(){

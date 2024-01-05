@@ -5,7 +5,6 @@ import java.util.Collection;
 public class Hotel {
     private int id;
     private String nom;
-    private String prenom;
     private String adresse;
     private String telephone;
     private int nbre_chambres_luxe;
@@ -13,10 +12,9 @@ public class Hotel {
     private Collection<Clients> liste_clients;
     private Collection<Utilisateurs> liste_utilisateurs;
 
-    public Hotel(int id, String nom, String prenom, String adresse, String telephone, int nbre_chambres_luxe, int nbre_chambres_normales, Collection<Clients> liste_Clients, Collection<Utilisateurs> liste_utilisateurs){
+    public Hotel(int id, String nom, String adresse, String telephone, int nbre_chambres_luxe, int nbre_chambres_normales, Collection<Clients> liste_Clients, Collection<Utilisateurs> liste_utilisateurs){
         this.id = id;
         this.nom = nom;
-        this.prenom = prenom;
         this.adresse = adresse;
         this.telephone = telephone;
         this.nbre_chambres_luxe = nbre_chambres_luxe;
@@ -39,14 +37,6 @@ public class Hotel {
 
     public String setnom(){
         return nom;
-    }
-
-    public String getprenom(){
-        return prenom;
-    }
-
-    public String setprenom(){
-        return prenom;
     }
 
     public String getadresse(){

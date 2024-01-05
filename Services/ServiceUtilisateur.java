@@ -9,12 +9,12 @@ import Class.Utilisateurs;
 public class ServiceUtilisateur {
 
     // Chemin du fichier Excel existant
-    private static String excelFilePath = "mon_classeur.xlsx";
+    private static String excelFilePath = "../BD/mon_classeur.xlsx";
 
     // Nom de la feuille de calcul à modifier
     private static String sheetName = "Utilisateurs";
     
-    public static void addDataToExistingSheet(Utilisateurs user) {
+    public static void addUser(Utilisateurs user) {
 
         try (FileInputStream fileInputStream = new FileInputStream(excelFilePath);
                 Workbook workbook = new XSSFWorkbook(fileInputStream)) {
