@@ -25,50 +25,68 @@ public class Clients {
     }
 
     public int getid(){
-        return id;
-    }
-
-    public int setid(){
-        return id;
+        return this.id;
     }
 
     public String getnom(){
-        return nom;
+        return this.nom;
     }
 
-    public String setnom(){
-        return nom;
+    public void setnom(String nom){
+        this.nom = nom;
+    }
+
+    public String getprenom(){
+        return this.prenom;
+    }
+
+    public void setprenom(String prenom){
+        this.prenom = prenom;
     }
 
     public String getemail(){
-        return email;
+        return this.email;
     }
 
-    public String setemail(){
-        return email;
+    public void setemail(String email){
+        this.email = email;
     }
 
     public String gettelephone(){
-        return telephone;
+        return this.telephone;
     }
 
-    public String settelephone(){
-        return telephone;
+    public void settelephone(String tel){
+        this.telephone = tel;
     }
 
     public Date getdate_arrivee(){
-        return date_arrivee;
+        return this.date_arrivee;
     }
 
-    public Date setdate_sortie(){
-        return date_sortie;
+    public void setdate_arrivee(Date date_arrivee){
+        this.date_arrivee = date_arrivee;
+    }
+
+    public Date getdate_sortie(){
+        return this.date_sortie;
+    }
+
+    public void setdate_sortie(Date date_sortie){
+        this.date_sortie = date_sortie;
     }
 
     public TypePaiement getmode_paiement(){
-        return mode_paiement;
+        return this.mode_paiement;
     }
 
-    public TypePaiement setmode_paiement(){
-        return mode_paiement;
+    public void setmode_paiement(TypePaiement mode_paiement){
+        this.mode_paiement = mode_paiement;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }

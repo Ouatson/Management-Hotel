@@ -1,7 +1,9 @@
 package Class;
 
-public class Utilisateurs {
-    
+import java.io.Serializable;
+
+public class Utilisateurs implements Serializable {
+
     private int id;
     private String nom;
     private String prenom;
@@ -10,7 +12,11 @@ public class Utilisateurs {
     private String password;
     private int id_hotel;
 
-    public Utilisateurs(int id, String nom, String prenom, TypePoste poste, String login, String password, int id_hotel){
+    public Utilisateurs() {
+    }
+
+    public Utilisateurs(int id, String nom, String prenom, TypePoste poste, String login, String password,
+            int id_hotel) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -20,59 +26,61 @@ public class Utilisateurs {
         this.id_hotel = id_hotel;
     }
 
-    public int getid(){
-        return id;
+    public int getid() {
+        return this.id;
     }
 
-    public int setid(){
-        return id;
+    public String getnom() {
+        return this.nom;
     }
 
-    public String getnom(){
-        return nom;
+    public void setnom(String nom) {
+        this.nom = nom;
     }
 
-    public String setnom(){
-        return nom;
+    public String getprenom() {
+        return this.prenom;
     }
 
-    public String getprenom(){
-        return prenom;
+    public void setprenom(String prenom) {
+        this.prenom = prenom;
     }
 
-    public String setprenom(){
-        return prenom;
+    public TypePoste getposte() {
+        return this.poste;
     }
 
-    public TypePoste getposte(){
-        return poste;
+    public void setposte(TypePoste poste) {
+        this.poste = poste;
     }
 
-    public TypePoste setposte(){
-        return poste;
-    }
-
-    public String getlogin(){
+    public String getlogin() {
         return login;
     }
 
-    public String setlogin(){
-        return login;
+    public void setlogin(String login) {
+        this.login = login;
     }
 
-    public String getpassword(){
-        return password;
+    public String getpassword() {
+        return this.password;
     }
 
-    public String setpassword(){
-        return password;
+    public void setpassword(String password) {
+        this.password = password;
     }
 
-    public int getid_hotel(){
-        return id_hotel;
+    public int getid_hotel() {
+        return this.id_hotel;
     }
 
-    public int setid_hotel(){
-        return id_hotel;
+    public void setid_hotel(int id_hotel) {
+        this.id_hotel = id;
     }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }

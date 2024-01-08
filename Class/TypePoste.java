@@ -7,8 +7,8 @@ public enum TypePoste {
 
     private String type;
 
-    private TypePoste(String type){
+    private TypePoste(String type) {
         this.type = type;
     }
-    
+
 }
